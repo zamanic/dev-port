@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles/port.css">
+    <!--4 from figma inspect to see font family then google it and then paste the embedded link or you can put the css rule in it and paste it in the css as universal settings of font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--1.created three tags initially called header, main and footer-->
+    <!--24.to deal with the header background, we placed header class-->
+    <header class="header">
+        <nav>
+            <!--2.nav-->
+            <h2 class="nav-title">Ma<span class="text-primary">r</span>y</h2>
+            <ul>
+                <!--3.css to make the list horizontal and padding and border and margin from inspect of figma-->
+                <li>Portfolio</li>
+                <li>Blogs</li>
+                <li><button class="btn-primary">Hire</button></li>
+            </ul>
+        </nav>
+        <!--18.now if you want two items div and img to be placed in-line just below the navigation like banner we can make div tag but div is a block so the items will fall under each other and not side by side, so we need to use flex in the css and put a class named banner as an attributes to div to be placed side by side-->
+        <div class="banner">
+            <div>
+                <!--21.from figma style-->
+                <h3 class="banner-sub-title">Hi, I am Anisuzzaman Shuvo</h3>
+                <!--21.from figma style-->
+                <h1 class="banner-title">NUMERIZAM</h1>
+                <p class="banner-description">In short this is the first time i am doing this kinda project to get hold of the programming language which will be used in my accounting project and i might embed artificial intelligence with this project to do opencv. 
+                </p>
+                <button class="btn-primary">Download CV</button>
+            </div>
+             <img src="images/hardy.png" alt="">
+        </div>
+
+    </header>
+    <!--27 in the main section we have found out that the width is smaller than the header and we will use sections that are to be placed one after another-->
+    <main>
+        <section class="about">
+        <h3 class="section-title">About Me</h3>
+         <p class="section-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime nemo sint culpa vel molestiae quaerat ea veritatis officia quos, facilis, voluptatibus molestias, nihil porro! A dicta illo alias cupiditate deleniti laborum suscipit iusto. Molestiae, est incidunt. Commodi sapiente voluptate quibusdam. Inventore eaque incidunt harum fugit. Dolore sed consequuntur delectus cumque.</p>  
+        <div class="about-info-container">  
+         <!--34. div.about-info*4>p.info-title+p.info-description-->
+         <div class="about-info">
+            <p class="info-title">Name:</p>
+            <p class="info-description">Anisuzzaman Shuvo</p>
+         </div>
+         <div class="about-info">
+            <p class="info-title">Email</p>
+            <p class="info-description">anisuzzaman.shuvo@gmail.com</p>
+         </div>
+         <div class="about-info">
+            <p class="info-title">Date of Birth</p>
+            <p class="info-description">16th December</p>
+         </div>
+         <div class="about-info">
+            <p class="info-title">Location</p>
+            <p class="info-description">Dhaka, Bangladesh</p>
+         </div>
+        </div>
+        </section>
+        <section class="other"></section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

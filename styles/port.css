@@ -1,0 +1,152 @@
+/*5. as in initial margin we put 0 and css from google font of open sans from figma as default settings for the project and by the way 0 means 0px*/
+* {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*6. header and navigation styles and ctrl+c from inspect of figma */
+.nav-title {
+    font-weight: 800;
+    font-size: 45px;
+}
+
+/*7. this is the middle color of the font which will be taken care with span tag*/
+.text-primary {
+    color: #FD6E0A;
+}
+
+/*8. to make the nav elements horizontal*/
+nav {
+    display: flex;
+    /*11. now nav has two child elements at this point h2 and ul, so with the justify content we will part these two elements to its maximum length*/
+    justify-content: space-between;
+    /*12. now nav has two child elements at this point h2 and ul,their top margin from their own place is 50 and right and left is 200*/
+    margin: 50px 200px;
+}
+
+/*9. to remove the li's bullet points and make it normal*/
+nav li {
+    list-style: none;
+    /*13. now nav li has three child elements at this point, their left margin between the elements are 50px*/
+    margin-left: 50px;
+}
+
+/*10. inside nav there is ul and what flex do is it targets the child of the ul to be flexible or inline*/
+nav ul {
+    display: flex;
+    /* 17. like flex has justify content for horizontal case, there is another called alignment for vertical case, which can be adopt for child so we are using this inside nav's ul and not li*/
+    align-items: center;
+}
+
+/*13. height taken from inspect of the button but we did not take width and position as those values depend on the text inside and the padding and just by clicking once on the button may not give you all the details in figma so double click around the outside imaginary padding of text of the button*/
+.btn-primary {
+    height: 64px;
+    /* 14. just by clicking once on the button may not give you all the details in figma so double click around the outside imaginary padding of text of the button*/
+    background: #FD6E0A;
+    border-radius: 5px;
+    /* 15. now by clicking around the text inside the button will give information about the font and its padding and font weight*/
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    /* 16. padding can be found by first click on the text and the alt and run the mouse till the end point to find the distance*/
+    border: 0;
+    padding: 18px 36px;
+}
+
+/*19. two banner items will be flex ed to place it side by side and vertically aligned and put them in margin*/
+.banner {
+    display: flex;
+    align-items: center;
+    /* 20. top margin is already applied by nav item above*/
+    margin: 0 200px;
+}
+
+/*21.from figma style*/
+.banner-title {
+    font-weight: 700;
+    font-size: 85px;
+    line-height: 116px;
+    color: #181818;
+}
+
+/*21.from figma style*/
+.banner-sub-title {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 61px;
+    color: #474747;
+    /*22.from figma style using alt */
+    margin-bottom: 20px;
+}
+
+/*21.from figma style*/
+.banner-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #757575;
+    /*23.from figma style using alt from the paragraph to the download button*/
+    margin-bottom: 30px;
+}
+
+/*24.to deal with the header background, we placed header class*/
+.header {
+    background: #FFF8F3;
+    background-image: url('../images/header_bg.png'), url('../images/developer.png');
+    /*25.to stop the repeat placing of the images according to its width height and position of the item and the places*/
+    background-repeat: no-repeat;
+    /*26.since we want the image to be on the right side bottom of the page till the header content, comma is given for second image*/
+    background-position: bottom right, left;
+}
+
+/*28 following are the main tag's class that is overall main's style and followed by three class's of main such as about section-title and description*/
+main {
+    /*29 as the content's maximum width is 1140*/
+    max-width: 1140px;
+    /*30 everytime you use maximum-width you must use margin or flex like below*/
+    margin: 0 auto;
+    /*31 from figma*/
+}
+
+.about {
+    text-align: center;
+    margin-top: 130px;
+    background: #FFF8F3;
+    border-radius: 10px;
+    padding: 130px 150px;
+}
+
+.section-title {
+    /*32 for text center and from figma using alt*/
+
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.section-description {
+    /*33 from figma and using alt */
+    color: #757575;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/*35.Since flex is to be implemented in the parent for the child*/
+.about-info-container {
+    display: flex;
+    /*38. from flexbox cheat sheet we get to know flexbox justify content's feature like space-around*/
+    justify-content: space-around;
+}
+
+/*36.inside about we have info-title, we want to change font-size and color*/
+.about .info-title {
+    font-size: 20px;
+    color: #757575;
+}
+
+.info-description {
+    /*37. from Figma: font-weight-size and color*/
+    font-weight: 700;
+    font-size: 20px;
+    color: #474747
+}
