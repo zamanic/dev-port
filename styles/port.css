@@ -20,8 +20,12 @@ nav {
     display: flex;
     /*11. now nav has two child elements at this point h2 and ul, so with the justify content we will part these two elements to its maximum length*/
     justify-content: space-between;
-    /*12. now nav has two child elements at this point h2 and ul,their top margin from their own place is 50 and right and left is 200*/
-    margin: 50px 200px;
+    /*12. now nav has two child elements at this point h2 and ul,their top margin from their own place is 50 and right and left is 200
+    
+    margin: 50px 200px;*/
+    
+    /*62. work order is for padding and not margin, margin gives us separation of the contents, but if we increase use padding instead of margin then separation will not be seen*/
+    padding: 50px 200px; 
 }
 
 /*9. to remove the li's bullet points and make it normal*/
