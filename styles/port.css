@@ -167,7 +167,7 @@ main {
     padding: 130px 150px;
 }
 */
-section{
+section {
     text-align: center;
     margin-top: 130px;
     background: #FFF8F3;
@@ -192,9 +192,11 @@ section{
     margin-top: 30px;
     margin-bottom: 20px;
 }
+
 .skill-description {
     color: #757575;
 }
+
 /*43. if you have used FLEX then there is one property that comes with it is gap between the boxes or elements gap is not margin or padding but like border gap between two boxes*/
 .skill {
     background: #FFFFFF;
@@ -203,35 +205,76 @@ section{
     /*44 padding between the text and the border*/
     padding: 30px;
 }
+
 /*50. since we want the child of resume-content to sit beside each other so we are using flex on this parent*/
-.resume-content{
-display: flex;
-/*52. if you have used FLEX then there is one property that comes with it is gap between the boxes or elements and gap is not margin or padding but it is like margin gap between two boxes horizontally*/
-gap: 24px;
+.resume-content {
+    display: flex;
+    /*52. if you have used FLEX then there is one property that comes with it is gap between the boxes or elements and gap is not margin or padding but it is like margin gap between two boxes horizontally*/
+    gap: 24px;
 }
-.resume .title{
-font-weight: 700;
-font-size: 25px;
-color: #474747;
-/*53 margin or gap between top and bottom elements*/
-margin-bottom: 10px;
+
+.resume .title {
+    font-weight: 700;
+    font-size: 25px;
+    color: #474747;
+    /*53 margin or gap between top and bottom elements*/
+    margin-bottom: 10px;
 
 }
-.resume .sub-title{
-color:#757575;
-font-weight: 600;
-font-size: 20px;
-/*53 margin or gap between top and bottom elements*/
-margin-bottom: 20px;
+
+.resume .sub-title {
+    color: #757575;
+    font-weight: 600;
+    font-size: 20px;
+    /*53 margin or gap between top and bottom elements*/
+    margin-bottom: 20px;
 }
-.resume .description{
-color:#757575;
+
+.resume .description {
+    color: #757575;
 }
-.resume-item{
+
+.resume-item {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.resume-button{
+
+.resume-button {
     margin-top: 50px;
     text-align: center;
+}
+
+/*54 for contact*/
+.contact .section-title {
+
+    text-align: left;
+}
+
+.contact {
+    /*55 because it is placed besides each other so flex and then gap as margin between the elements*/
+    display: flex;
+    gap: 100px;
+    background: #FFF8F3;
+    padding: 130px 200px;
+}
+
+/* 59. since one of the input type is Submit button and width in the following style is given 100% so submit will get larger so need to specify the type of the input where only this width=100% would be applied*/
+.contact input[type="email"],
+input[type="text"],
+textarea {
+    margin-bottom: 24px;
+    /*56 since they dont have border*/
+    border: 0;
+    /*57 take the maximum width which not include the padding*/
+    width: 100%;
+    /*58 so we have added the padding*/
+    padding: 18px 30px;
+}
+
+input {
+    height: 64px;
+}
+/*61. text decoration to be changed to none so that the icons are shown without the underline or any default settings*/
+.contact a{
+    text-decoration: none;
 }
