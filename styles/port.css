@@ -91,6 +91,7 @@ nav ul {
 
 /*24.to deal with the header background, we placed header class*/
 .header {
+
     background: #FFF8F3;
     background-image: url('../images/header_bg.png'), url('../images/developer.png');
     /*25.to stop the repeat placing of the images according to its width height and position of the item and the places*/
@@ -110,7 +111,8 @@ main {
 
 .about {
     text-align: center;
-    margin-top: 130px;
+    /*since the margin-top is put to section so we removed the following item
+    margin-top: 130px;*/
     background: #FFF8F3;
     border-radius: 10px;
     padding: 130px 150px;
@@ -118,10 +120,11 @@ main {
 
 .section-title {
     /*32 for text center and from figma using alt*/
-
     font-weight: 700;
     font-size: 35px;
     margin-bottom: 30px;
+    /*45 padding between the text and the border*/
+    text-align: center;
 }
 
 .section-description {
@@ -149,4 +152,53 @@ main {
     font-weight: 700;
     font-size: 20px;
     color: #474747
+}
+
+/*39. since it is similar to about, so it has same property as the about section*/
+/*47 since following what-i-do 's property value common for all so we removed it and then put it in section{}
+.what-i-do {
+    text-align: center;
+    margin-top: 130px;
+    background: #FFF8F3;
+    border-radius: 10px;
+    padding: 130px 150px;
+}
+*/
+section{
+    text-align: center;
+    margin-top: 130px;
+    background: #FFF8F3;
+    border-radius: 10px;
+    padding: 130px 150px;
+
+
+}
+
+
+/*41. to put the elements side by side we use FLEX*/
+.skills-container {
+    display: flex;
+    /*42. if you have used FLEX then there is one property that comes with it is gap between the boxes or elements gap is not margin or padding but like border gap between two boxes*/
+    gap: 24px;
+}
+
+.skill-title {
+    font-weight: 700;
+    font-size: 20px;
+    /*45 margin between the text label to the icon and the bottom paragraph*/
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.skill-description {
+    color: 757575;
+}
+
+/*43. if you have used FLEX then there is one property that comes with it is gap between the boxes or elements gap is not margin or padding but like border gap between two boxes*/
+.skill {
+    background: #FFFFFF;
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    /*44 padding between the text and the border*/
+    padding: 30px;
 }
