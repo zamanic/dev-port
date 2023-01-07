@@ -122,9 +122,12 @@ main {
     /*32 for text center and from figma using alt*/
     font-weight: 700;
     font-size: 35px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     /*45 padding between the text and the border*/
     text-align: center;
+    /*48 */
+
+
 }
 
 .section-description {
@@ -178,7 +181,7 @@ section{
 /*41. to put the elements side by side we use FLEX*/
 .skills-container {
     display: flex;
-    /*42. if you have used FLEX then there is one property that comes with it is gap between the boxes or elements gap is not margin or padding but like border gap between two boxes*/
+    /*42. if you have used FLEX then there is one property that comes with it is gap between the boxes or elements gap is not margin or padding but like border gap between two boxes horizontally*/
     gap: 24px;
 }
 
@@ -189,11 +192,9 @@ section{
     margin-top: 30px;
     margin-bottom: 20px;
 }
-
 .skill-description {
-    color: 757575;
+    color: #757575;
 }
-
 /*43. if you have used FLEX then there is one property that comes with it is gap between the boxes or elements gap is not margin or padding but like border gap between two boxes*/
 .skill {
     background: #FFFFFF;
@@ -201,4 +202,36 @@ section{
     border-radius: 5px;
     /*44 padding between the text and the border*/
     padding: 30px;
+}
+/*50. since we want the child of resume-content to sit beside each other so we are using flex on this parent*/
+.resume-content{
+display: flex;
+/*52. if you have used FLEX then there is one property that comes with it is gap between the boxes or elements and gap is not margin or padding but it is like margin gap between two boxes horizontally*/
+gap: 24px;
+}
+.resume .title{
+font-weight: 700;
+font-size: 25px;
+color: #474747;
+/*53 margin or gap between top and bottom elements*/
+margin-bottom: 10px;
+
+}
+.resume .sub-title{
+color:#757575;
+font-weight: 600;
+font-size: 20px;
+/*53 margin or gap between top and bottom elements*/
+margin-bottom: 20px;
+}
+.resume .description{
+color:#757575;
+}
+.resume-item{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.resume-button{
+    margin-top: 50px;
+    text-align: center;
 }
